@@ -13,7 +13,6 @@
 .relative-second-block{
     position: relative;
     /* wrt itself i.e reference point = bottom-left corner of blue-box */
-    left: 50px;
     width: 50px;
     height: 50px;
     background-color: rgb(70, 228, 149);
@@ -37,10 +36,38 @@
     position: absolute;
     /* wrt parent i.e reference point = top-left corner of blue-box */
     /* if parent's position is not relative then the reference point would be top-left corner of html page */
-    top: 0px;
+    top: 50px;
     left: 50px;
     width: 50px;
     height: 50px;
     background-color: rgb(70, 228, 149);
 }
 
+#fixed-container{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.fixed-first-block{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(70, 139, 228);
+}
+
+.fixed-second-block{
+    position: fixed;
+    /* wrt html-page i.e reference point = top-left corner of page */
+    /* stays fixed even on scrolling */
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(241, 114, 10);
+}
+
+.content{
+    font-family: arial;
+    font-size: 64px;
+}
