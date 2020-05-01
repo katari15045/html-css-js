@@ -1,6 +1,14 @@
 body{
     font-family: arial,sans-serif;
     margin: 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 'body-content';
+}
+
+#body-content{
+    grid-area: 'body-content';
 }
 
 button{
@@ -12,9 +20,10 @@ button{
 }
 
 #modal-close-button{
-    position: absolute;
-    right: 30px;
-    top: 30px;
+    position: sticky;
+    margin-top: 20px;
+    top: 20px;
+    float: right;
     font-size: 16px;
 }
 
@@ -32,15 +41,31 @@ button{
 }
 
 .modal{
-    position: relative;
     position: fixed;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: 10fr 90fr;
+    grid-template-columns: auto;
+    grid-template-areas: 'modal-header' 'modal-body';
     width: 70%;
-    height: 70%;
+    height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     box-shadow: 0px 0px 9px 3px rgba(128, 128, 128, 0.63);
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#modal-header{
+    grid-area: modal-header;
+    justify-self: right;
+    position: sticky;
+    top: 0px;
+}
+
+#modal-body{
+    grid-area: modal-body;
 }
