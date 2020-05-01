@@ -69,8 +69,7 @@
     background-color: rgb(241, 114, 10);
 }
 
-
-/* Sticky block sticks (remains fixed even while scrolling) when the condition (top/bottom/left/right) satisfies wrt its PARENT */
+/* Sticky block sticks to parent (remains fixed even while scrolling) when the condition (top/bottom/left/right) satisfies wrt its PARENT */
 /* sticky block can't stick to its parent when its parent is no more visible upon scrolling */
 /* application: https://developer.mozilla.org/en-US/docs/Web/CSS/position?v=example#Sticky_positioning */
 /* tutorial: https://medium.com/@elad/css-position-sticky-how-it-really-works-54cd01dc2d46 */
