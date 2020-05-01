@@ -1,0 +1,26 @@
+body{
+    width: 400px;
+    border: 1px solid black;
+}
+
+.float-container{
+    border: 1px solid black;
+}
+
+.float{
+    float: left;
+    background-color: orange;
+    margin: 10px;
+}
+
+.absolute-container{
+    position: relative;
+    border: 1px solid black;
+}
+
+.absolute{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: yellow;
+}
